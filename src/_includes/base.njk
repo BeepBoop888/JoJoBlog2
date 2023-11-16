@@ -1,0 +1,29 @@
+---
+ueberschrift: "Überschrift"
+artikel: "Meine Projekte"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <main>
+            {% include 'header.njk' %}
+            {{ content | safe }}
+            <!-- <p>
+                Herzlich Willkommen zu meinem Blog. <br>
+                Hier siehst du witzige und spannede Ergebnisse aus meinem Leben. Ich versuche diesen Blog immer aktuell zu halten.
+            </p>
+            
+            <h2>{{ artikel }}</h2> <p>
+                Da ich mich an IT und Technik interessiere stelle ich in diesem Artikel
+            </p> -->
+            {% include 'footer.njk' %}
+        </main>
+    </body>
+</html>
